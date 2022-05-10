@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+	
+var mediaDeIdadeParaTerFilhos = 28;
+var anoDaChegadaPortugues  = 1500;
+var anoAtual = prompt("Qual é o ano atual?");
+
+
+var anosQuePassaramDesdeAChegada  = anoAtual - anoDaChegadaPortugues ;\
+var quantidadeDeGeracoes  = Math.round(anosQuePassaramDesdeAChegada /mediaDeIdadeParaTerFilhos);
+
+function pulaLinha(){
+	document.write("<br>");
+}
+
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+function mostraTitulo(titulo) {
+
+        document.write("<h1>" + titulo + "</h1>");
+
+        pulaLinha();
+
+    }
+
+
+mostraTitulo("calculo de geracoes");
+mostra("Desde de 1500 até hoje já se passaram " + quantidadeDeGeracoes + " gerações!");
+
+
+
+</script>

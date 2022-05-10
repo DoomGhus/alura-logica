@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+        document.write("<br>")
+        document.write("<br>")
+    }
+    function mostra(frase){
+        document.write(frase)
+        pulaLinha()
+    }
+ var login = "abc"
+ var senha = "123"
+
+ var tentativaMaxima = 3
+ var tentativaAtual = 1
+
+ while(tentativaAtual<=tentativaMaxima){
+
+ var loginInformado = prompt ("digita o login, meu chefe")
+ var senhaInformada = prompt ("digita a senha, minha fera")
+
+ if(login == loginInformado && senha == senhaInformada) {
+     alert("Bem vindo, chefia!")
+     mostra("<h>Conteúdo</h>")
+     tentativaAtual=tentativaMaxima
+ } else  if(tentativaAtual==3)
+ {
+     alert("Deu ruim")}
+     else{
+
+     alert("Digita outra vez")
+     tentativaAtual=tentativaAtual+1
+ }
+     }
+</script>
